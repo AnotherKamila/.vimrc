@@ -7,3 +7,6 @@
 [submodule "bundle/vim-multiple-cursors"]
 	path = bundle/vim-multiple-cursors
 	url = https://github.com/terryma/vim-multiple-cursors.git
+[submodule "matchit.zip"]
+	path = matchit.zip
+	url = https://github.com/vim-scripts/matchit.zip.git
