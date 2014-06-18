@@ -1,4 +1,4 @@
-" Kamila's new neat .vimrc (heavily based on MisoF's .vimrc
+" Kamila's new neat .vimrc (based on MisoF's .vimrc)
 "
 " === should-be-defaults to preserve one's sanity ============================================== {{{
 
@@ -34,7 +34,7 @@ set clipboard=unnamed,unnamedplus  " use system clipboard for y and d
 
 set showcmd    " show additional stuff when typing a command
 
-set timeout         " for mapped commands (
+set timeout         " for mapped commands
 set timeoutlen=200  " ms
 
 set incsearch
@@ -55,6 +55,10 @@ let g:SuperTabDefaultCompletionType = "context"
 " ============================================================================================== }}}
 " === make vim more useful ===================================================================== {{{
 
-set hidden " ... e.g. for editing multiple files
+set hidden          " ... e.g. for editing multiple files
+filetype plugin on  " ... or for editing multiple languages :D
 
+" ============================================================================================== }}}
+" === folding ================================================================================== {{{
+set fdm=marker
 " ============================================================================================== }}}
