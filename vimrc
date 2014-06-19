@@ -5,6 +5,7 @@
 set nocompatible  " we want vim's features (as opposed to just vi)
 set bs=2          " make backspace work as expected
 set autoindent
+set smartindent
 set history=100
 set ruler         " cursor position (line, col) in the bottom line
 syntax on
