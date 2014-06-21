@@ -54,6 +54,11 @@ cmap w!! %!sudo tee > /dev/null %  " useful if one keeps forgetting sudo :D
 let g:SuperTabDefaultCompletionType = "context"
 
 " ============================================================================================== }}}
+" === custom mappings ========================================================================== {{{
+
+map <F2> :NERDTreeToggle<CR>
+
+" ============================================================================================== }}}
 " === make vim more useful ===================================================================== {{{
 
 set hidden          " ... e.g. for editing multiple files
