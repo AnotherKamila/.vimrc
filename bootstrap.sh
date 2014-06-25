@@ -11,7 +11,7 @@ if [[ -f "$VIMRC" ]]; then
 				# that, but the rest can still work
 	fi
 fi
-ln -s "$PWD/vimrc" "$HOME/.vimrc"
+ln -s "$PWD/.vimrc" "$HOME/.vimrc"
 
 # get plugins
 git submodule init
