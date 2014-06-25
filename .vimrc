@@ -26,6 +26,8 @@ set textwidth=100
 set background=dark
 colorscheme solarized
 
+set cursorline
+
 set autoread   " automatically re-read files changed outside vim
 set autowrite  " autosave files before a make or execute
 
@@ -59,6 +61,9 @@ cmap w!! %!sudo tee > /dev/null %  " useful if one keeps forgetting sudo :D
 
 " I use the [supertab](https://github.com/ervandew/supertab) plug-in for tab completion
 let g:SuperTabDefaultCompletionType = "context"
+
+" show a rule for textwidth (specifically: display (tw+1)-th column in a different color)
+:set colorcolumn=+1
 
 " ============================================================================================== }}}
 " === custom mappings ========================================================================== {{{
