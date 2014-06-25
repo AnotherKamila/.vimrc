@@ -2,14 +2,13 @@
 
 # symlink to ~/.vimrc
 VIMRC="$HOME/.vimrc"
+if [[ -L "$VIMRC" ]]; then
+	rm -f "$VIMRC"  # if it's a symlink, just silently overwrite
+fi
 if [[ -f "$VIMRC" ]]; then
-	if [[ -L "$VIMRC" ]]; then
-		rm -f "$VIMRC"  # if it's a symlink, just silently overwrite
-	else
-		rm -i "$VIMRC"  # if it exists, ask, and if the user does not
-				# remove it, they will receive errors about
-				# that, but the rest can still work
-	fi
+	rm -i "$VIMRC"  # if it is a regular file, ask, and if the user does
+			# not remove it, they will receive errors about that,
+			# but the rest can still work
 fi
 ln -s "$PWD/.vimrc" "$HOME/.vimrc"
 
