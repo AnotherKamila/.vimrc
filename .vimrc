@@ -27,9 +27,11 @@ set background=dark
 colorscheme solarized
 
 set autoread   " automatically re-read files changed outside vim
-set autowrite  " autosave files before a make or execute 
+set autowrite  " autosave files before a make or execute
 
-set wildmenu   " cycle through all options on tab
+set wildmenu   " wildmenu fun!
+set wildchar=<Tab>
+set wildmode=full
 
 set clipboard=unnamed,unnamedplus  " use system clipboard for y and d
 
