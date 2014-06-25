@@ -63,7 +63,9 @@ cmap w!! %!sudo tee > /dev/null %  " useful if one keeps forgetting sudo :D
 let g:SuperTabDefaultCompletionType = "context"
 
 " show a rule for textwidth (specifically: display (tw+1)-th column in a different color)
-:set colorcolumn=+1
+set colorcolumn=+1
+
+set fdm=marker
 
 " ============================================================================================== }}}
 " === custom mappings ========================================================================== {{{
@@ -76,7 +78,10 @@ map <F2> :NERDTreeToggle<CR>
 set hidden          " ... e.g. for editing multiple files
 filetype plugin on  " ... or for editing multiple languages :D
 
-" ============================================================================================== }}}
-" === folding ================================================================================== {{{
-set fdm=marker
+" if there are machine-specific things, I can just put them to ~/.vimrc.local
+if filereadable(glob("~/.vimrc.local"))
+    source ~/.vimrc.local
+endif
+
+
 " ============================================================================================== }}}
